@@ -1,0 +1,15 @@
+[download] Destination: fLexgOxsZu0.m4a
+[download] 100% of 3.07MiB in 00:38
+[ffmpeg] Correcting container in "fLexgOxsZu0.m4a"
+[ffmpeg] Destination: fLexgOxsZu0.mp3
+Deleting original file fLexgOxsZu0.m4a (pass -k to keep)
+Traceback (most recent call last):
+  File "c:\Users\gilso\Downloads\PySimpleGUI-Music-Player-main\PySimpleGUI-Music-Player-main\teste.py", line 43, in <module>      
+    play_audio_from_youtube(query)
+  File "c:\Users\gilso\Downloads\PySimpleGUI-Music-Player-main\PySimpleGUI-Music-Player-main\teste.py", line 38, in play_audio_from_youtube
+    sound = AudioSegment.from_file(audio_file, format="mp3")
+  File "C:\Users\gilso\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\audio_segment.py", line 651, in from_file  
+    file, close_file = _fd_or_path_or_tempfile(file, 'rb', tempfile=False)
+  File "C:\Users\gilso\AppData\Local\Programs\Python\Python310\lib\site-packages\pydub\utils.py", line 60, in _fd_or_path_or_tempfile
+    fd = open(fd, mode=mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'fLexgOxsZu0.m4a'
